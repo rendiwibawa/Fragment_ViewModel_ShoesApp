@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityHome">
+    <!--    ini navigasi bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/putih"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:text="Hello "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/putih"
+                android:textSize="19dp"
+                android:text="Broo!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+
+                android:layout_width="30dp"
+                android:layout_height="match_parent"/>
+
+
+            <androidx.appcompat.widget.SearchView
+                android:background="@drawable/btn_src"
+                android:layout_weight="1"
+                android:backgroundTint="#424251"
+                android:gravity="left|center_vertical"
+                android:drawableStart="@drawable/ic_cari"
+                android:textAllCaps="false"
+                android:text="Cari apa.."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.appcompat.widget.SearchView>
+
+            <RelativeLayout
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+                <Button
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_favorite"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+            <RelativeLayout
+                android:layout_width="15dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <!--    ini header   -->
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/header" />
+            <!--    splash  -->
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-90dp"
+                android:background="@drawable/splash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:src="@drawable/g1"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#5C5B5B"
+                        android:text="Best Today !"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="Mizuno Air Sky 270"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:textSize="13dp"
+                        android:textColor="#F75A7C"
+                        android:textStyle="bold"
+                        android:text="Rp. 2,500,000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:id="@+id/btnMove"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn"
+                        android:backgroundTint="#545454"
+                        android:textColor="@color/putih"
+                        android:textAllCaps="false"
+                        android:text="Ambil Promo"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--   menu    -->
+            <LinearLayout
+
+                android:padding="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--    card menu   -->
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:background="@drawable/card_menu"
+                        android:padding="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:src="@drawable/kategori"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:text="Kategori"
+                        android:textSize="12dp"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:background="@drawable/card_menu"
+                        android:padding="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:src="@drawable/percentage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:text="Diskon"
+                        android:textSize="12dp"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:background="@drawable/card_menu"
+                        android:padding="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:src="@drawable/gift"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:text="Event"
+                        android:textSize="12dp"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:background="@drawable/card_menu"
+                        android:padding="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:src="@drawable/badge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:text="Terlaris"
+                        android:textSize="12dp"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingBottom="16dp"
+                android:padding="15dp"
+                android:background="@drawable/background_khusus"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--    Title Sweep    -->
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="Produk Terbaru Guys...!"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:background="@drawable/btn"
+                        android:textAllCaps="false"
+                        android:textColor="@color/putih"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:text="View All"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <HorizontalScrollView
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--           Card Produk             -->
+                        <LinearLayout
+                            android:foreground="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:background="@drawable/card_produk"
+                            android:orientation="vertical"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <androidx.cardview.widget.CardView
+                                    app:cardCornerRadius="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:cropToPadding="false"
+                                        android:adjustViewBounds="true"
+                                        android:src="@drawable/g4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:textSize="12dp"
+                                    android:text="Mizuno Dragon 90"
+                                    android:textColor="#303030"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="7 Warna"
+                                    android:textColor="#303030"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:textColor="#303030"
+                                    android:textStyle="bold"
+                                    android:text="RP.2.000,000"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="13dp"
+                            android:layout_height="match_parent"/>
+                        <!--           Card Produk             -->
+                        <LinearLayout
+                            android:foreground="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:background="@drawable/card_produk"
+                            android:orientation="vertical"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <androidx.cardview.widget.CardView
+                                    app:cardCornerRadius="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:cropToPadding="false"
+                                        android:adjustViewBounds="true"
+                                        android:src="@drawable/g5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:textSize="12dp"
+                                    android:textColor="#303030"
+                                    android:text="Mizuno Fife 201"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#303030"
+                                    android:text="10 Warna"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:text="RP.2.500,000"
+                                    android:textColor="#303030"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="13dp"
+                            android:layout_height="match_parent"/>
+                        <!--           Card Produk             -->
+                        <LinearLayout
+                            android:foreground="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:background="@drawable/card_produk"
+                            android:orientation="vertical"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <androidx.cardview.widget.CardView
+                                    app:cardCornerRadius="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:cropToPadding="false"
+                                        android:adjustViewBounds="true"
+                                        android:src="@drawable/g6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:textSize="12dp"
+                                    android:text="Mizuno gold 77"
+                                    android:textColor="#303030"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="1 Warna"
+                                    android:textColor="#303030"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:text="RP.1.800,000"
+                                    android:textColor="#303030"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="13dp"
+                            android:layout_height="match_parent"/>
+                        <!--           Card Produk             -->
+                        <LinearLayout
+                            android:foreground="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:background="@drawable/card_produk"
+                            android:orientation="vertical"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <androidx.cardview.widget.CardView
+                                    app:cardCornerRadius="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:cropToPadding="false"
+                                        android:adjustViewBounds="true"
+                                        android:src="@drawable/g3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:textSize="12dp"
+                                    android:textColor="#303030"
+                                    android:text="Mizuno Blue Ocean"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#303030"
+                                    android:text="1 Warna"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:text="RP.1.000,000"
+                                    android:textColor="#303030"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <!--     Produk Lainya       -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:paddingRight="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="Produk Terlaris.."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:background="@drawable/btn"
+                    android:textAllCaps="false"
+                    android:textColor="@color/putih"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="View All"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--        Card Produk        -->
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:foreground="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="4dp"
+                        android:background="@drawable/card_produk"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <androidx.cardview.widget.CardView
+                                app:cardCornerRadius="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:cropToPadding="false"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/g3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#303030"
+                                android:textSize="12dp"
+                                android:text="Mizuno Blue Ocean"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:textColor="#303030"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="1 Warna"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:textColor="#303030"
+                                android:textStyle="bold"
+                                android:text="RP.1.000,000"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:foreground="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="4dp"
+                        android:background="@drawable/card_produk"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <androidx.cardview.widget.CardView
+                                app:cardCornerRadius="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:cropToPadding="false"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/g1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#303030"
+                                android:textSize="12dp"
+                                android:text="Mizuno Air Sky 270"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:textColor="#303030"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="7 Warna"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:textColor="#303030"
+                                android:textStyle="bold"
+                                android:text="RP.2.000,000"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#ffffff"
+        android:backgroundTint="#424251"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/item_buttom_navigation" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">R-Shoes</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Cepat Tepat!</string>
+    <string name="slide_1_desc">Kami memastikan barang yang anda pesan sampai dengan cepat dan tepat pada waktunya.</string>
+
+    <string name="slide_2_title">Anda Puas Kami Senang</string>
+    <string name="slide_2_desc">Kepuasan anda juga kepuasan kami dengan selalu memberikan pelayanan terbaik untuk anda.</string>
+
+    <string name="slide_3_title">Harga Bersaing</string>
+    <string name="slide_3_desc">Harga terjamin termurah di kelasnya dengan barang asli dan branded.</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="tab_text_1">Input Data</string>
+    <string name="tab_text_2">Check Data</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    android:gravity="center"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_frag"
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
+
+        <ImageView
+            android:layout_width="290dp"
+            android:layout_height="296dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:src="@drawable/g1" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="Mizuno Air Sky 270"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:textSize="23dp"
+            android:textColor="#F75A7C"
+            android:textStyle="bold"
+            android:text="Rp. 2,500,000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="414dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_frag2">
+            <TextView
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Checkout"/>
+
+            <Button
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:text="Nama         :  Kosong!"
+                android:textSize="15dp" />
+
+            <Button
+                android:layout_marginRight="40dp"
+                android:id="@+id/textViewAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Alamat     :  Kosong!"
+                android:textSize="15dp" />
+
+            <Button
+                android:layout_marginRight="40dp"
+                android:id="@+id/textViewTlp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="No.Tlp       :  Kosong!"/>
+            <Button
+                android:layout_marginRight="40dp"
+                android:id="@+id/textViewSize"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Size             :  Kosong!"/>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Transaksi otomatis di cek setelah 3 menit"
+                android:textSize="15dp" />
+            <Button
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn"
+                android:backgroundTint="@color/colorAccent"
+                android:text="Mandiri : 098676273/an R-Shoes"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+</RelativeLayout>

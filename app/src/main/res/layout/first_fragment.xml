@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_frag"
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
+
+        <ImageView
+            android:layout_width="290dp"
+            android:layout_height="296dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:src="@drawable/g1" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="Mizuno Air Sky 270"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:textSize="13dp"
+            android:textColor="#F75A7C"
+            android:textStyle="bold"
+            android:text="Rp. 2,500,000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="414dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_frag2">
+            <TextView
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Checkout"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputTextName"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:hint="Nama Pemesan" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputTextAlamat"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:hint="Alamat Pemesan" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputTextTlp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:hint="Tlp Pemesan" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputTextSize"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:hint="Size Sepatu" />
+            <TextView
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:text="Pastikan data yang anda massukan benar sebelum pembayaran"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>
