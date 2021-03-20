@@ -1,12 +1,12 @@
 # Fragment_ViewModel_ShoesApp
 <a href="https://www.fsf.org">
-	<img align="right" src="https://github.com/rendiwibawa/ResepMakanan/blob/master/ezgif.com-gif-maker%20(1).gif">
+	<img align="right" src="https://github.com/rendiwibawa/Fragment_ViewModel_ShoesApp/blob/master/runapp.gif">
 </a>
 
 ### 🌱 what this app?
-- ✔️Project ini menggunakan metode Fragment Communication dengan ViewModel.
-- ✔️SplashScreen - Ini mengacu pada layar pengantar dalam aplikasi setelah diluncurkan.
-- ✔️Slider - Sebuah 'slideshow' dalam aplikasi Android yang memberikan petunjuk atau fitur tampilan yang ditawarkan oleh suatu aplikasi.Menampilkan Slider di awal app dan untuk runing berikutnya sudah di destroy
+- ✔️Fragment Communication dengan ViewModel - ViewModel tetap berada di memori sampai Lifecycle yang dicakupnya hilang secara permanen.
+- ✔️SplashScreen - Ini mengacu pada layar pengantar dalam aplikasi setelah diluncurkan setelah slider.
+- ✔️Slider - Sebuah 'slideshow' dalam aplikasi Menampilkan Slider di awal app dan untuk runing berikutnya sudah di destroy.
 - ✔️View pager - Kelas dalam yang mengizinkan pengguna untuk membalik ke kiri atau kanan untuk melihat data dalam aplikasi.
 - ✔️Adaptor Pager - Ini mengacu pada kelas dasar yang menyediakan adaptor untuk mengisi halaman di dalam a ViewPager.
 
