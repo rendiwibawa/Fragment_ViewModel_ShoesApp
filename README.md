@@ -4,33 +4,24 @@
 </a>
 
 ### 🌱 what this app?
-- ✔️Aplikasi Resep masakan ini akan membentu user dalam menemukan berbagai resep 
-masakan yang ada. Aplikasi ini akan memeberikan banyak list dari berbagai resep 
-masakan di sertai dengan gambar dan juga cara pembuatnya .
+- ✔️Project ini menggunakan metode Fragment Communication dengan ViewModel.
 
-- ✔️Aplikasi ini mampu menampung banyak resep dan dapat menampilkanya.
-
-- ✔️Aplikasi ini di desain minimalis dan simpel agar user mudah dan nyaman dalam 
-penggunaanya
+- ✔️Menampilkan Slider di awal app dan untuk runing berikutnya sudah di destroy
 
 
 ### 💻 component  :
-- [x]	recycleview
-- [x]	cardview
-- [x]	circleimageview
-- [x]	splashscreen
-- [x] Intent
+- [x]	Slider
+- [x]	Splash Screen
+- [x]	ViewModel
+- [x]	Fragment
 
 
-### 🚀 view app ...
+## Ringkasan Materi :
+### 🎌Fragment
+	Fragment mewakili perilaku atau bagian dari antarmuka pengguna dalam FragmentActivity. Kita bisa mengombinasikan beberapa fragmen dalam satu aktivitas untuk membangun UI multipanel dan menggunakan kembali sebuah fragmen dalam beberapa aktivitas. Kita bisa menganggap fragmen sebagai bagian modular dari aktivitas, yang memiliki daur hidup sendiri, menerima kejadian masukan sendiri, dan yang bisa kita tambahkan atau hapus saat aktivitas berjalan (semacam "subaktivitas" yang bisa digunakan kembali dalam aktivitas berbeda).
 
-- Menampilkan Splash Screen
-- Menampilkan Daftar List Resep Masakan
-- Menampilkan Detail Resep Masakan 
-- Menampilkan Informasi Developer
-
-
-
+### 🧮ViewModel 
+	Objek ViewModel dicakupkan ke Lifecycle yang diteruskan ke ViewModelProvider saat menerima ViewModel. ViewModel tetap berada di memori sampai Lifecycle yang dicakupnya hilang secara permanen: dalam kasus aktivitas, yaitu saat aktivitas selesai, sementara dalam kasus fragmen, yaitu sampai fragmen terlepas. penggunaanya
 
 <p align="center">
   <a <code><img width="10%" src="https://www.vectorlogo.zone/logos/java/java-ar21.svg"></code>
