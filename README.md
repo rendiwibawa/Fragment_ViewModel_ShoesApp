@@ -5,9 +5,10 @@
 
 ### 🌱 what this app?
 - ✔️Project ini menggunakan metode Fragment Communication dengan ViewModel.
-
-- ✔️Menampilkan Slider di awal app dan untuk runing berikutnya sudah di destroy
-
+- ✔️SplashScreen - Ini mengacu pada layar pengantar dalam aplikasi setelah diluncurkan.
+- ✔️Slider - Sebuah 'slideshow' dalam aplikasi Android yang memberikan petunjuk atau fitur tampilan yang ditawarkan oleh suatu aplikasi.Menampilkan Slider di awal app dan untuk runing berikutnya sudah di destroy
+- ✔️View pager - Kelas dalam yang mengizinkan pengguna untuk membalik ke kiri atau kanan untuk melihat data dalam aplikasi.
+- ✔️Adaptor Pager - Ini mengacu pada kelas dasar yang menyediakan adaptor untuk mengisi halaman di dalam a ViewPager.
 
 ### 💻 component  :
 - [x]	Slider
