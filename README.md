@@ -11,7 +11,7 @@
 - ✔️Adaptor Pager - Ini mengacu pada kelas dasar yang menyediakan adaptor untuk mengisi halaman di dalam a ViewPager.
 
 ### 💻 component  :
-- [x]	Slider
+- [x]	Slider.
 - [x]	Splash Screen
 - [x]	ViewModel
 - [x]	Fragment
